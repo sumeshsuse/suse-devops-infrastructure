@@ -28,3 +28,9 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: ${{ env.TF_VERSION }}
+      - name: Terraform init 
+        run: Terraform init
+      - name: Terraform plan
+        run: Terraform plan
+      - name: Terraform apply
+        run: Terraform apply --auto-approve=true
