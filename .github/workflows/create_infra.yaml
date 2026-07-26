@@ -29,8 +29,8 @@ jobs:
         with:
           terraform_version: ${{ env.TF_VERSION }}
       - name: Terraform init 
-        run: Terraform init
+        run: terraform init
       - name: Terraform plan
-        run: Terraform plan
+        run: terraform plan
       - name: Terraform apply
-        run: Terraform apply --auto-approve=true
+        run: terraform apply --auto-approve=true
