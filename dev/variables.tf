@@ -17,3 +17,13 @@ variable "backend_sg_name" {
   description = "Name of the backedn sg name"
   type = string
 }
+
+variable "private_subnet_cidr" {
+  description = "private subnet cidr"
+  type = string
+}
+
+variable "public_subnet_cidr" {
+  description = "public subnet cidr"
+  type=string
+}
